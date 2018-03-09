@@ -1,4 +1,4 @@
-{% set version = '0.10.11' %}
+{% set version = "0.10.13" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -10,7 +10,7 @@ package:
 source:
   fn: RMySQL_{{ version }}.tar.gz
   url: https://cran.r-project.org/src/contrib/Archive/RMySQL/RMySQL_{{ version }}.tar.gz
-  sha256: da405e38d08bb728586c2b9c969f222b0b83fe1df33ad9308eba820b8f03ea88
+  sha256: 02396db92a2fa3e25ba448f0ae0b8244ca6b92a277e4f7a1784c004da8c81bc8
 
 build:
   number: 0
