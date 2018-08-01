@@ -13,7 +13,8 @@ source:
   sha256: 02396db92a2fa3e25ba448f0ae0b8244ca6b92a277e4f7a1784c004da8c81bc8
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: True  # [win]
 
 #
@@ -22,21 +23,21 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+  host:
     - r-base
     - r-dbi
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
-    - readline 6.2*        # [not win]
+    - readline             # [not win]
     - mysql-connector-c    # [not win]
-    - icu 58*
+    - icu
   run:
     - r-base
     - r-dbi
-    - libgcc               # [not win]
-    - readline 6.2*        # [not win]
+    - readline             # [not win]
     - mysql-connector-c    # [not win]
-    - icu 58*
+    - icu
 
 test:
   commands:
