@@ -3,7 +3,7 @@ About r-rmysql
 
 Home: https://downloads.mariadb.org/connector-c/ (upstream)
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rmysql-feedstock/blob/master/LICENSE.txt)
 
@@ -168,6 +168,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@chambm](https://github.com/chambm/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
 
