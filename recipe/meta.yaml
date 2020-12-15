@@ -50,15 +50,15 @@ test:
 
 about:
   home: https://downloads.mariadb.org/connector-c/ (upstream)
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Legacy 'DBI' interface to 'MySQL' / 'MariaDB' based on old code ported from S-PLUS. A modern 'MySQL' client based on 'Rcpp' is available  from the 'RMariaDB' package.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - chambm
 
 # Package: RMySQL
 # Version: 0.10.17
