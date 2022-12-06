@@ -1,4 +1,4 @@
-{% set version = "0.10.24" %}
+{% set version = "0.10.25" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RMySQL_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RMySQL/RMySQL_{{ version }}.tar.gz
-  sha256: ca1b9aacab6d76866ba09210ae881c3a7555bd5144ea0a0a446fceff80637241
+  sha256: ed130f9bd80ea9fd5b4fdbb6fa094c35646354507de68eb3d19a3cbc8b5a4794
 
 build:
   merge_build_host: true  # [win]
