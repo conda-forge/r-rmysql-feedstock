@@ -3,6 +3,7 @@ About r-rmysql-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rmysql-feedstock/blob/main/LICENSE.txt)
 
+
 About r-rmysql
 --------------
 
@@ -11,6 +12,7 @@ Home: https://downloads.mariadb.org/connector-c/ (upstream)
 Package license: GPL-2.0-only
 
 Summary: Legacy 'DBI' interface to 'MySQL' / 'MariaDB' based on old code ported from S-PLUS. A modern 'MySQL' client based on 'Rcpp' is available  from the 'RMariaDB' package.
+
 About r-rmysql
 --------------
 
