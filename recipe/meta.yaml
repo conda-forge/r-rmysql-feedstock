@@ -1,4 +1,4 @@
-{% set version = "0.10.29" %}
+{% set version = "0.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RMySQL_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RMySQL/RMySQL_{{ version }}.tar.gz
-  sha256: 82e89e3fcebc21b13701dc89af54700fafc22762510db88eb6c3b965f2976b86
+  sha256: 47c64bd58668a3cc47c5beb0111381f13b8e58515729ef500bbce65bf652bbfc
 
 build:
   # Checking windows to see if it passes. Uncomment the line if it fails.
